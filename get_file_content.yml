@@ -1,6 +1,6 @@
 ---
 - name: Shell Examples
-  hosts: localhost:3022
+  hosts: localhost
   tasks:
     - name: Dir list and write to file
       shell: " ls -lrt"
