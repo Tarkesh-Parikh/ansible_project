@@ -1,0 +1,14 @@
+---
+- name: Shell Examples
+  hosts: testservers
+  tasks:
+    - name: Dir list and write to file
+      shell: " ls -lrt"
+      register: lsout
+      tags: lsout
+
+    - name: Display the file
+      shell: cat test.txt
+      register: displaylist
+
+    - debug: msg="{{displaylist.stdout_lines}}"
