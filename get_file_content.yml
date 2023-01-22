@@ -1,6 +1,6 @@
 ---
 - name: Shell Examples
-  hosts: ansibletarget01
+  hosts: localhost
   tasks:
     - name: Dir list and write to file
       shell: " ls -lrt"
